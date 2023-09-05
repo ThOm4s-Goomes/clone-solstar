@@ -121,6 +121,10 @@
         height: 70px;
     }
 
+    img {
+        width: 500px;
+    }
+
     #logo {
         display: none;
     }
