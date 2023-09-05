@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'text-navbar';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #fff;
+    padding-inline: 16px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+
+}
+
+
+.nav-bar #buttonNavbarWeb {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: text-navbar;
+    color: white;
+    border-style: none;
+    background-color: blueviolet;
+}
+
+.menu {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -50px;
+
+}
+
+.menu::before,
+.menu::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin-top: 5px;
+}
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    text-decoration: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    font-family: text-navbar;
+    color: black;
+    padding-block: 16px;
+}
+
+#logo2 {
+    display: none;
+
+}
+
+.listBody {
+    display: flex;
+    position: relative;
+}
+
+
+.imageBody img {
+    width: 600px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+}
+
+#title {
+    display: none;
+    font-size: 35px;
+    font-family: text-navbar;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#subtitle {
+    display: none;
+    font-family: text-navbar;
+}
+
+.listBody h1 {
+    display: none;
+    position: fixed;
+    font-family: text-navbar;
+    padding-top: 40px;
+}
+
+/* ============================Mobile=====================================*/
+@media (max-width: 750px) {
+    .menu {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .header {
+        background: #6c44a4;
+        height: 70px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #logo2 {
+        position: fixed;
+        display: block;
+        top: 0;
+        right: 30px;
+        margin-top: 20px;
+
+    }
+
+    .nav-bar #buttonNavbarWeb {
+        display: none;
+    }
+
+
+    .nav-list a {
+        display: none;
+    }
+
+    h1 {
+        display: flex;
+        font-family: text-navbar;
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 30px;
+        font-size: 20px;
+        color: gray;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+}
